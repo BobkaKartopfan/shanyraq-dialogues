@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": "usr_demo",
+      "name": "Demo User",
+      "email": "demo@shanyraq.local",
+      "passwordHash": "d1f71d5697012b858cda00df5a85df3d:2633cbd15fa5be8672776267af4e9193f7cc05e8506084b8280053860c5ed547",
+      "createdAt": "2026-05-09T14:34:45.609Z"
+    }
+  ],
+  "articles": []
+}
