@@ -1,0 +1,329 @@
+/* The Dialogues page's editorial treatment is kept together for easy revision. */
+.dialogues-page {
+  --dialogues-gold: #bda060;
+  background: #fcfbf7;
+}
+
+.dialogues-page .dialogues-page-hero {
+  min-height: 620px;
+}
+
+.dialogues-page .episode-page-copy {
+  padding-top: 88px;
+  padding-bottom: 96px;
+}
+
+.dialogues-page .episode-page-copy .eyebrow {
+  color: #e3ce9b;
+  letter-spacing: 0.16em;
+  margin-bottom: 24px;
+}
+
+.dialogues-page h1 {
+  font-size: clamp(3.2rem, 6.5vw, 6.2rem);
+  max-width: 1000px;
+}
+
+.dialogues-page .episode-page-copy .lead {
+  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
+  margin-top: 24px;
+}
+
+.dialogues-hero-links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 34px;
+}
+
+.dialogues-button,
+.dialogues-archive-link {
+  align-items: center;
+  display: inline-flex;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 650;
+  gap: 24px;
+  min-height: 48px;
+  text-decoration: none;
+}
+
+.dialogues-button {
+  background: #f5eedc;
+  border: 1px solid #f5eedc;
+  border-radius: 4px;
+  color: var(--ink);
+  padding: 0 22px;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.dialogues-button:hover {
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+.dialogues-archive-link {
+  color: white;
+  text-underline-offset: 6px;
+}
+
+.dialogues-archive-link:hover {
+  text-decoration: underline;
+}
+
+.dialogues-page a:focus-visible {
+  outline: 3px solid var(--dialogues-gold);
+  outline-offset: 6px;
+}
+
+.dialogues-page .program-page-shell {
+  gap: 96px;
+  margin-top: 76px;
+  margin-bottom: 96px;
+}
+
+.dialogues-story,
+.dialogues-page #episodes {
+  scroll-margin-top: 28px;
+}
+
+.dialogues-story-heading {
+  margin-bottom: 48px;
+}
+
+.dialogues-story-heading .eyebrow {
+  color: #78612f;
+  letter-spacing: 0.12em;
+  margin-bottom: 18px;
+}
+
+.dialogues-story-heading h2 {
+  font-size: clamp(2.6rem, 5vw, 4.8rem);
+  letter-spacing: var(--display-spacing);
+  line-height: 1.08;
+}
+
+.dialogues-story-heading em {
+  color: #917338;
+  font-weight: 400;
+}
+
+.dialogues-story-layout {
+  align-items: start;
+  display: grid;
+  gap: clamp(32px, 6vw, 88px);
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr);
+}
+
+.dialogues-symbol {
+  background: #152044;
+  border-radius: 4px;
+  color: #fff;
+  overflow: hidden;
+  padding: clamp(24px, 3vw, 40px);
+  position: sticky;
+  top: 28px;
+}
+
+.dialogues-symbol-art {
+  align-items: center;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 20px;
+  position: relative;
+  width: 100%;
+}
+
+.dialogues-symbol-art img {
+  height: auto;
+  position: relative;
+  transition: transform 800ms ease;
+  width: 58%;
+}
+
+.dialogues-symbol:hover .dialogues-symbol-art img {
+  transform: rotate(8deg) scale(1.04);
+}
+
+.dialogues-orbit {
+  border: 1px solid rgba(189, 160, 96, 0.5);
+  border-radius: 50%;
+  inset: 2%;
+  position: absolute;
+}
+
+.dialogues-orbit-outer::after {
+  background: #dfc78e;
+  border-radius: 50%;
+  content: "";
+  height: 9px;
+  left: 50%;
+  position: absolute;
+  top: -5px;
+  width: 9px;
+}
+
+.dialogues-orbit-inner {
+  border-color: rgba(189, 160, 96, 0.23);
+  inset: 11%;
+}
+
+.dialogues-symbol-caption {
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin-bottom: 32px;
+}
+
+.dialogues-symbol-meta {
+  border-top: 1px solid rgba(227, 206, 155, 0.3);
+  color: #e3ce9b;
+  display: grid;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  gap: 8px;
+  padding-top: 20px;
+}
+
+.dialogues-chapter {
+  border-top: 1px solid #d9d3c5;
+  padding: 24px 0 34px;
+}
+
+.dialogues-chapter:last-child {
+  padding-bottom: 0;
+}
+
+.dialogues-chapter-heading {
+  align-items: baseline;
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.dialogues-chapter-heading span {
+  color: #917338;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.dialogues-chapter-heading h3 {
+  font-size: 1.65rem;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+.dialogues-chapter p {
+  color: #485168;
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: var(--copy-line-height);
+  margin: 0;
+}
+
+.dialogues-page .editions-section {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid #d9d3c5;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 40px 0 0;
+}
+
+.dialogues-page .editions-section h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.dialogues-page .episode-grid {
+  gap: 24px;
+}
+
+.dialogues-page .episode-card {
+  border-color: #e4dfd4;
+  box-shadow: 0 8px 30px rgba(16, 25, 54, 0.04);
+  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+}
+
+.dialogues-page .episode-card:hover {
+  border-color: var(--dialogues-gold);
+  box-shadow: 0 18px 38px rgba(16, 25, 54, 0.09);
+  transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dialogues-page [data-reveal].is-visible {
+    animation: dialoguesReveal 700ms ease both;
+  }
+
+  .dialogues-orbit-outer {
+    animation: dialoguesOrbit 35s linear infinite;
+  }
+}
+
+@keyframes dialoguesReveal {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dialoguesOrbit {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 760px) {
+  .dialogues-page .dialogues-page-hero {
+    min-height: 540px;
+  }
+
+  .dialogues-page .episode-page-copy {
+    padding: 64px 0 72px;
+  }
+
+  .dialogues-page .program-page-shell {
+    gap: 56px;
+    margin-top: 48px;
+    margin-bottom: 56px;
+  }
+
+  .dialogues-story-heading {
+    margin-bottom: 32px;
+  }
+
+  .dialogues-story-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dialogues-symbol {
+    align-items: center;
+    display: grid;
+    gap: 16px 24px;
+    grid-template-columns: minmax(100px, 0.7fr) minmax(0, 1fr);
+    position: relative;
+    top: auto;
+  }
+
+  .dialogues-symbol-art {
+    grid-row: span 2;
+    margin-bottom: 0;
+  }
+
+  .dialogues-symbol-caption {
+    font-size: clamp(1.35rem, 4vw, 2rem);
+    margin: 0;
+  }
+
+  .dialogues-symbol-meta {
+    font-size: 0.68rem;
+    padding-top: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dialogues-page *,
+  .dialogues-page *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
